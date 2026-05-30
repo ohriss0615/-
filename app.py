@@ -1,5 +1,5 @@
 from flask import Flask, request
-
+import os
 app = Flask(__name__)
 
 posts = []
@@ -72,8 +72,6 @@ def save():
         메인으로
     </a>
     """
-
-import os
 
 if __name__ == "__main__":
     app.run(
